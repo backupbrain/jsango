@@ -1,0 +1,23 @@
+{
+  "name": "jsango",
+  "version": "1.0.0",
+  "description": "Javascript implementation of the Django framework",
+  "main": "manage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backupbrain/jsango.git"
+  },
+  "author": "backupbrain@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backupbrain/jsango/issues"
+  },
+  "homepage": "https://github.com/backupbrain/jsango#readme",
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}

@@ -1,6 +1,8 @@
-import AboutClass from './views.js'
+const { AboutClass } = require('./views')
 
 urls = [
-    { path: '/about', method: 'aboutMethod' },
-    { path: '/aboutClass', class: AboutClass },
+    [ '/', AboutClass ],
+    [ '/about/', AboutClass ]
 ]
+
+exports.default = urls

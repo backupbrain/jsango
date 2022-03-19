@@ -1,4 +1,4 @@
-import Models from '../dbrms.js'
+const { Models } = require('../jsango-core/Models')
 
 class User extends Models {
     constructor () {
@@ -8,3 +8,5 @@ class User extends Models {
 
     // static async get()
 }
+
+exports.User = User

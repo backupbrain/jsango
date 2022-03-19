@@ -1,18 +1,17 @@
-import response from '../server.js'
-import User from './models.js'
-import View from './djangoClassViews'
-
-function aboutMethod (request) {
-    const user = await User.get({ email: 'soricine@gmail.com' })
-    const context = { 'name': user.name }
-    return response(request, 'about.html', context)
-}
-
+const { response } = require('../jsango-core/response')
+const { User } = require('./models')
+const { View } = require('../jsango-core/View')
 
 class AboutClass extends View {
-    get (request) {
+    
+    get templateFilename () { return 'about.html' }
+
+    async get (request) {
         const user = await User.get({ email: 'soricine@gmail.com' })
-        const context = { 'name': user.name }
+        const context = this.getContextData()
+        context['name'] = user.name
         return response(request, 'about.html', context)
     }
 }
+
+exports.AboutClass = AboutClass
