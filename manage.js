@@ -8,7 +8,7 @@ const doRunServer = (arguments) => {
     }
 
     jsangoHttpServer.listen(port)
-    console.log(`JSango web server at port ${port} is running..`)
+    console.log(`JSango web server at port ${port} is running...`)
 }
 
 const doMakeDatabaseMigrations = () => {

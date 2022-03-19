@@ -22,6 +22,7 @@ Server:
 
 ```console
 $ node manage.js runserver
+JSango web server at port 8000 is running...
 ```
 
 Client: 
