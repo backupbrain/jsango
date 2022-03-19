@@ -1,0 +1,16 @@
+# package.json
+
+# instead of doing `npm install`
+# `pip3 install -r requirements.txt`
+
+# npm init in the beginning
+# `pip3 freeze > requirements.txt` at the end
+
+# instead of `npm install --save npmModule`
+# `pip3 install pythonModule`
+
+# to create: `python3 -m venv .venv`
+# to use each time: `source .venv/bin/activate`
+
+# .venv is like the node_modules 
+# .gitignore should have .venv
