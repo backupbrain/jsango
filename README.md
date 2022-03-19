@@ -26,7 +26,17 @@ $ node manage.js runserver
 
 Client: 
 ```console
-curl http://localhost:8000/about/
+$ curl -D - http://localhost:8000/about/
+HTTP/1.1 200 OK
+Date: Sat, 19 Mar 2022 20:49:39 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+<h1>
+    My name is John Doe
+</h1>
+
 ```
 
 
