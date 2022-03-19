@@ -16,6 +16,14 @@ I decided to use JSON instead of SQL because with JSON I can just load the file 
 
 This also has a single "app", `blog/` which can be configured to work similar to a Django project.
 
+## Setting up
+
+Install necessary modules:
+
+```console
+$ npm install
+```
+
 ## Running:
 
 Server: 
